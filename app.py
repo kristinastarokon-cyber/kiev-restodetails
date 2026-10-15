@@ -65,42 +65,43 @@ st.markdown("<p class='main-title notranslate' translate='no'>С ДНЕМ РОЖ
 # --- СПИСОК ССЫЛОК НА ТВОИ ФОТО ИЗ ИНТЕРНЕТА ---
 # Вставь сюда свои ссылки через запятую в кавычках (хоть все 35 штук!)
 photo_urls = [
-    https://i.postimg.cc/TPNkQ1Zr/IMG-0026.avif
-https://i.postimg.cc/LsWTL71C/IMG-0125.avif
-https://i.postimg.cc/y8VvH0KN/IMG-0255.avif
-https://i.postimg.cc/cH8cmmR7/IMG-0262.avif
-https://i.postimg.cc/66vHL9ck/IMG-0567.jpg
-https://i.postimg.cc/g2YNW3pV/IMG-0737.jpg
-https://i.postimg.cc/RhhJdVxm/IMG-20230512-174218-675-Original.jpg
-https://i.postimg.cc/3Nq4c53G/IMG-20230616-212808-529-Original.jpg
-https://i.postimg.cc/zD2gBWTV/IMG-20230621-213100-239-Original.jpg
-https://i.postimg.cc/nVSDz7qX/IMG-20231006-160507-443-Original.jpg
-https://i.postimg.cc/PfVwxZ1Q/IMG-20231023-184313-867-Original.jpg
-https://i.postimg.cc/h4ZdjxVs/IMG-20231102-141804-016-Original.jpg
-https://i.postimg.cc/026JJQCY/IMG-20240415-160556-853.jpg
-https://i.postimg.cc/8PFrr5bm/IMG-20240529-152151-990.jpg
-https://i.postimg.cc/SNXzzsG1/IMG-20250620-182809-426-Original.jpg
-https://i.postimg.cc/9FvwPh8R/IMG-20250622-160716-275-Original.jpg
-https://i.postimg.cc/qMtCCRGF/IMG-20250719-172115-621-Original.jpg
-https://i.postimg.cc/T1sL4MTp/IMG-4081.jpg
-https://i.postimg.cc/TPKjd9HZ/IMG-4160.avif
-https://i.postimg.cc/qqFh5Vpx/IMG-4374.jpg
-https://i.postimg.cc/VkCM26rr/IMG-4398.jpg
-https://i.postimg.cc/025w5n68/IMG-4704.avif
-https://i.postimg.cc/Ghp4npNy/IMG-4822.jpg
-https://i.postimg.cc/L8Yhhb2N/IMG-4872.jpg
-https://i.postimg.cc/BvfZbZhN/IMG-6061.jpg
-https://i.postimg.cc/MTWW0PJq/IMG-6513.jpg
-https://i.postimg.cc/xC0zk3sT/IMG-6579.jpg
-https://i.postimg.cc/W32kDw9z/IMG-6652.avif
-https://i.postimg.cc/TwCWn5SJ/IMG-6830.jpg
-https://i.postimg.cc/ydvS035h/IMG-7021.jpg
-https://i.postimg.cc/KzJgt3VJ/IMG-7951.jpg
-https://i.postimg.cc/JnPBjHg2/IMG-7952.jpg
-https://i.postimg.cc/C1mfbnt3/IMG-7953.jpg
-https://i.postimg.cc/3RnD20VM/IMG-7954.jpg
-https://i.postimg.cc/4dBhpHqk/IMG-7955.jpg
-https://i.postimg.cc/yYJSSdPq/IMG-8444.avif
+        "https://i.postimg.cc/TPNkQ1Zr/IMG-0026.avif",
+"https://i.postimg.cc/LsWTL71C/IMG-0125.avif",
+"https://i.postimg.cc/y8VvH0KN/IMG-0255.avif",
+"https://i.postimg.cc/cH8cmmR7/IMG-0262.avif",
+"https://i.postimg.cc/66vHL9ck/IMG-0567.jpg",
+"https://i.postimg.cc/g2YNW3pV/IMG-0737.jpg",
+"https://i.postimg.cc/RhhJdVxm/IMG-20230512-174218-675-Original.jpg",
+"https://i.postimg.cc/3Nq4c53G/IMG-20230616-212808-529-Original.jpg",
+"https://i.postimg.cc/zD2gBWTV/IMG-20230621-213100-239-Original.jpg",
+"https://i.postimg.cc/nVSDz7qX/IMG-20231006-160507-443-Original.jpg",
+"https://i.postimg.cc/PfVwxZ1Q/IMG-20231023-184313-867-Original.jpg",
+"https://i.postimg.cc/h4ZdjxVs/IMG-20231102-141804-016-Original.jpg",
+"https://i.postimg.cc/026JJQCY/IMG-20240415-160556-853.jpg",
+"https://i.postimg.cc/8PFrr5bm/IMG-20240529-152151-990.jpg",
+"https://i.postimg.cc/SNXzzsG1/IMG-20250620-182809-426-Original.jpg",
+"https://i.postimg.cc/9FvwPh8R/IMG-20250622-160716-275-Original.jpg",
+"https://i.postimg.cc/qMtCCRGF/IMG-20250719-172115-621-Original.jpg
+"https://i.postimg.cc/T1sL4MTp/IMG-4081.jpg",
+"https://i.postimg.cc/TPKjd9HZ/IMG-4160.avif",
+"https://i.postimg.cc/qqFh5Vpx/IMG-4374.jpg",
+"https://i.postimg.cc/VkCM26rr/IMG-4398.jpg",
+"https://i.postimg.cc/025w5n68/IMG-4704.avif",
+"https://i.postimg.cc/Ghp4npNy/IMG-4822.jpg",
+"https://i.postimg.cc/L8Yhhb2N/IMG-4872.jpg",
+"https://i.postimg.cc/BvfZbZhN/IMG-6061.jpg",
+"https://i.postimg.cc/MTWW0PJq/IMG-6513.jpg",
+"https://i.postimg.cc/xC0zk3sT/IMG-6579.jpg",
+"https://i.postimg.cc/W32kDw9z/IMG-6652.avif",
+"https://i.postimg.cc/TwCWn5SJ/IMG-6830.jpg",
+"https://i.postimg.cc/ydvS035h/IMG-7021.jpg",
+"https://i.postimg.cc/KzJgt3VJ/IMG-7951.jpg",
+"https://i.postimg.cc/JnPBjHg2/IMG-7952.jpg",
+"https://i.postimg.cc/C1mfbnt3/IMG-7953.jpg",
+"https://i.postimg.cc/3RnD20VM/IMG-7954.jpg",
+"https://i.postimg.cc/4dBhpHqk/IMG-7955.jpg",
+"https://i.postimg.cc/yYJSSdPq/IMG-8444.avif"
+
 ]
 
 if photo_urls:
