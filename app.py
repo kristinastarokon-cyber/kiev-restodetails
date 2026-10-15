@@ -81,7 +81,7 @@ photo_urls = [
 "https://i.postimg.cc/8PFrr5bm/IMG-20240529-152151-990.jpg",
 "https://i.postimg.cc/SNXzzsG1/IMG-20250620-182809-426-Original.jpg",
 "https://i.postimg.cc/9FvwPh8R/IMG-20250622-160716-275-Original.jpg",
-"https://i.postimg.cc/qMtCCRGF/IMG-20250719-172115-621-Original.jpg
+"https://i.postimg.cc/qMtCCRGF/IMG-20250719-172115-621-Original.jpg",
 "https://i.postimg.cc/T1sL4MTp/IMG-4081.jpg",
 "https://i.postimg.cc/TPKjd9HZ/IMG-4160.avif",
 "https://i.postimg.cc/qqFh5Vpx/IMG-4374.jpg",
