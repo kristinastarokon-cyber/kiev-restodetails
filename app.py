@@ -62,10 +62,16 @@ st.balloons()
 # Заголовок с защитой от перевода
 st.markdown("<p class='main-title notranslate' translate='no'>С ДНЕМ РОЖДЕНИЯ, НАДЮША!</p>", unsafe_allow_html=True)
 
+# --- БЛОК ДЛЯ МУЗЫКИ ---
+# Сайт будет брать песню music.mp3 из твоей папки photos на GitHub
+st.markdown("<p style='text-align:center; color:#2C3E50; font-size:18px; font-weight:bold;'>Включи музыкальное сопровождение ✨</p>", unsafe_allow_html=True)
+audio_file_path = "photos/music.mp3"
+st.audio(audio_file_path, format="audio/mp3", loop=True)
+# ----------------------
+
 # --- СПИСОК ССЫЛОК НА ТВОИ ФОТО ИЗ ИНТЕРНЕТА ---
-# Вставь сюда свои ссылки через запятую в кавычках (хоть все 35 штук!)
 photo_urls = [
-        "https://i.postimg.cc/TPNkQ1Zr/IMG-0026.avif",
+    "https://i.postimg.cc/TPNkQ1Zr/IMG-0026.avif",
 "https://i.postimg.cc/LsWTL71C/IMG-0125.avif",
 "https://i.postimg.cc/y8VvH0KN/IMG-0255.avif",
 "https://i.postimg.cc/cH8cmmR7/IMG-0262.avif",
@@ -101,7 +107,6 @@ photo_urls = [
 "https://i.postimg.cc/3RnD20VM/IMG-7954.jpg",
 "https://i.postimg.cc/4dBhpHqk/IMG-7955.jpg",
 "https://i.postimg.cc/yYJSSdPq/IMG-8444.avif"
-
 ]
 
 if photo_urls:
