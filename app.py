@@ -66,7 +66,7 @@ st.markdown("<p class='main-title notranslate' translate='no'>С ДНЕМ РОЖ
 st.markdown("<p style='text-align:center; color:#2C3E50; font-size:18px; font-weight:bold;'>Включи музыкальное сопровождение ✨</p>", unsafe_allow_html=True)
 
 # ЗАМЕНИ ЭТУ ССЫЛКУ НА СВОЮ СКОПИРОВАННУЮ ССЫЛКУ НА MP3 ФАЙЛ!
-audio_link = "https://storage.filebin.net/filebin/270b78cce2fc47e12dba1139ac39eb220006c25b04dadee280f0ab3edff39a95?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=GK352fd2505074fc9dde7fd2cb%2F20261016%2Fhel1-dc4%2Fs3%2Faws4_request&X-Amz-Date=20261016T102338Z&X-Amz-Expires=900&X-Amz-SignedHeaders=host&response-cache-control=max-age%3D900&response-content-disposition=inline%3B%20filename%3D%22music.mp3%22&response-content-type=audio%2Fx-m4a&x-id=GetObject&X-Amz-Signature=0a83cd3593e2fb0363ee0574400c4e4f4b984073e55cdde663bcf8a5ffb4ee6c"
+audio_link = "https://files.catbox.moe/qop2vi.mp3"
 
 st.audio(audio_link, format="audio/mp3", loop=True)
 # ----------------------
