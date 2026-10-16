@@ -15,7 +15,7 @@ st.markdown("""
 # Дизайн (сиреневый, белый, голубой)
 st.markdown("""
     <style>
-    /* Мягкий пастельный фон: сиренево-голубой перелив */
+    /* Мягкий пастельный font: сиренево-голубой перелив */
     .stApp {
         background: linear-gradient(135deg, #E6E6FA 0%, #D8BFD8 50%, #B0E0E6 100%) !important;
     }
@@ -63,10 +63,12 @@ st.balloons()
 st.markdown("<p class='main-title notranslate' translate='no'>С ДНЕМ РОЖДЕНИЯ, НАДЮША!</p>", unsafe_allow_html=True)
 
 # --- БЛОК ДЛЯ МУЗЫКИ ---
-# Сайт будет брать песню music.mp3 из твоей папки photos на GitHub
 st.markdown("<p style='text-align:center; color:#2C3E50; font-size:18px; font-weight:bold;'>Включи музыкальное сопровождение ✨</p>", unsafe_allow_html=True)
-audio_file_path = "photos/music.mp3"
-st.audio(audio_file_path, format="audio/mp3", loop=True)
+
+# ЗАМЕНИ ЭТУ ССЫЛКУ НА СВОЮ СКОПИРОВАННУЮ ССЫЛКУ НА MP3 ФАЙЛ!
+audio_link = "https://filebin.net/13faqy7bgd4h8fjd/music.mp3"
+
+st.audio(audio_link, format="audio/mp3", loop=True)
 # ----------------------
 
 # --- СПИСОК ССЫЛОК НА ТВОИ ФОТО ИЗ ИНТЕРНЕТА ---
@@ -111,7 +113,6 @@ photo_urls = [
 
 if photo_urls:
     st.write("")
-    # Выводим фото красивой сеткой по 3 штуки в ряд
     cols = st.columns(3)
     for i, url in enumerate(photo_urls):
         with cols[i % 3]:
