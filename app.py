@@ -3,7 +3,7 @@ import streamlit as st
 # Настройки вкладки браузера
 st.set_page_config(page_title="С Днем Рождения, Надюша! ✨", page_icon="🌸", layout="centered")
 
-# ЖЕСТКАЯ ЗАЩИТА ОТ ПЕРЕВОДА И КОРРЕКТНЫЙ ЗАПУСК АУДИО НА МОБИЛЬНЫХ
+# ЖЕСТКАЯ ЗАЩИТА ОТ ПЕРЕВОДА НА УРОВНЕ КОДА ХТМЛ
 st.markdown("""
     <html lang="ru" class="notranslate" translate="no">
     <head>
@@ -54,21 +54,6 @@ st.markdown("""
         border-radius: 15px !important;
         box-shadow: 0px 8px 20px rgba(0,0,0,0.1) !important;
     }
-    
-    /* Мобильный плеер */
-    .audio-container {
-        text-align: center;
-        margin: 20px 0;
-        background: rgba(255, 255, 255, 0.8);
-        padding: 15px;
-        border-radius: 15px;
-        border: 2px solid #87CEEB;
-        box-shadow: 0px 5px 15px rgba(0,0,0,0.05);
-    }
-    audio {
-        width: 100%;
-        max-width: 400px;
-    }
     </style>
 """, unsafe_allow_html=True)
 
@@ -77,7 +62,9 @@ st.balloons()
 # Заголовок с защитой от перевода
 st.markdown("<p class='main-title notranslate' translate='no'>С ДНЕМ РОЖДЕНИЯ, НАДЮША!</p>", unsafe_allow_html=True)
 
-# Ссылка на супер-стабильный глобальный аудиопоток MP3
+# --- АКУРАТНИЙ СТАНДАРТНИЙ ПЛЕЄР ---
+st.markdown("<p style='text-align:center; color:#2C3E50; font-size:18px; font-weight:bold;'>Включи музыкальное сопровождение ✨</p>", unsafe_allow_html=True)
+
 import base64
 import streamlit as st
 
