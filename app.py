@@ -77,9 +77,6 @@ st.balloons()
 # Заголовок с защитой от перевода
 st.markdown("<p class='main-title notranslate' translate='no'>С ДНЕМ РОЖДЕНИЯ, НАДЮША!</p>", unsafe_allow_html=True)
 
-# --- НАДЕЖНЫЙ ПЛЕЕР С ПРЯМЫМ СТРИМИНГОМ ---
-st.markdown("<p style='text-align:center; color:#2C3E50; font-size:18px; font-weight:bold;'>Включи музыкальное сопровождение ✨</p>", unsafe_allow_html=True)
-
 # Ссылка на супер-стабильный глобальный аудиопоток MP3
 import base64
 import streamlit as st
