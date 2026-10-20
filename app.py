@@ -81,17 +81,23 @@ st.markdown("<p class='main-title notranslate' translate='no'>С ДНЕМ РОЖ
 st.markdown("<p style='text-align:center; color:#2C3E50; font-size:18px; font-weight:bold;'>Включи музыкальное сопровождение ✨</p>", unsafe_allow_html=True)
 
 # Ссылка на супер-стабильный глобальный аудиопоток MP3
-audio_link = "https://soundhelix.com"
+import base64
+import streamlit as st
+
+def get_audio_base64(file_path):
+    with open(file_path, "rb") as f:
+        data = f.read()
+    return base64.b64encode(data).decode()
+
+audio_b64 = get_audio_base64("music.mp3")
 
 st.markdown(f"""
-<div class="audio-container">
-    <audio controls loop preload="auto">
-        <source src="{audio_link}" type="audio/mp3">
-        Ваш браузер не поддерживает аудио.
-    </audio>
-</div>
+    <div style="background: white; padding: 15px; border-radius: 15px; text-align: center;">
+        <audio controls style="width: 100%;">
+            <source src="data:audio/mp3;base64,{audio_b64}" type="audio/mp3">
+        </audio>
+    </div>
 """, unsafe_allow_html=True)
-# ------------------------------------------------
 
 # --- СПИСОК ССЫЛОК НА ТВОИ ФОТО ИЗ ИНТЕРНЕТА ---
 photo_urls = [
