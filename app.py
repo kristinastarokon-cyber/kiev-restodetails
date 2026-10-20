@@ -66,7 +66,7 @@ st.markdown("<p class='main-title notranslate' translate='no'>С ДНЕМ РОЖ
 st.markdown("<p style='text-align:center; color:#2C3E50; font-size:18px; font-weight:bold;'>Включи музыкальное сопровождение ✨</p>", unsafe_allow_html=True)
 
 # ЗАМЕНИ ЭТУ ССЫЛКУ НА СВОЮ СКОПИРОВАННУЮ ССЫЛКУ НА MP3 ФАЙЛ!
-audio_link = "https://githubusercontent.com"
+audio_link = "https://github.com/kristinastarokon-cyber/kiev-restodetails/blob/main/music.mp3"
 st.audio(audio_link, format="audio/mp3", loop=True)
 # ----------------------
 
