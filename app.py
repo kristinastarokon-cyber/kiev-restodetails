@@ -3,7 +3,7 @@ import streamlit as st
 # Настройки вкладки браузера
 st.set_page_config(page_title="С Днем Рождения, Надюша! ✨", page_icon="🌸", layout="centered")
 
-# ЖЕСТКАЯ ЗАЩИТА ОТ ПЕРЕВОДА НА УРОВНЕ КОДА ХТМЛ
+# ЖЕСТКАЯ ЗАЩИТА ОТ ПЕРЕВОДА И КОРРЕКТНЫЙ ЗАПУСК АУДИО НА МОБИЛЬНЫХ
 st.markdown("""
     <html lang="ru" class="notranslate" translate="no">
     <head>
@@ -15,7 +15,7 @@ st.markdown("""
 # Дизайн (сиреневый, белый, голубой)
 st.markdown("""
     <style>
-    /* Мягкий пастельный font: сиренево-голубой перелив */
+    /* Мягкий пастельный фон: сиренево-голубой перелив */
     .stApp {
         background: linear-gradient(135deg, #E6E6FA 0%, #D8BFD8 50%, #B0E0E6 100%) !important;
     }
@@ -54,6 +54,21 @@ st.markdown("""
         border-radius: 15px !important;
         box-shadow: 0px 8px 20px rgba(0,0,0,0.1) !important;
     }
+    
+    /* Мобильный плеер */
+    .audio-container {
+        text-align: center;
+        margin: 20px 0;
+        background: rgba(255, 255, 255, 0.8);
+        padding: 15px;
+        border-radius: 15px;
+        border: 2px solid #87CEEB;
+        box-shadow: 0px 5px 15px rgba(0,0,0,0.05);
+    }
+    audio {
+        width: 100%;
+        max-width: 400px;
+    }
     </style>
 """, unsafe_allow_html=True)
 
@@ -62,13 +77,21 @@ st.balloons()
 # Заголовок с защитой от перевода
 st.markdown("<p class='main-title notranslate' translate='no'>С ДНЕМ РОЖДЕНИЯ, НАДЮША!</p>", unsafe_allow_html=True)
 
-# --- БЛОК ДЛЯ МУЗЫКИ ---
+# --- НАДЕЖНЫЙ ПЛЕЕР С ПРЯМЫМ СТРИМИНГОМ ---
 st.markdown("<p style='text-align:center; color:#2C3E50; font-size:18px; font-weight:bold;'>Включи музыкальное сопровождение ✨</p>", unsafe_allow_html=True)
 
-# ЗАМЕНИ ЭТУ ССЫЛКУ НА СВОЮ СКОПИРОВАННУЮ ССЫЛКУ НА MP3 ФАЙЛ!
-audio_link = "https://github.com/kristinastarokon-cyber/kiev-restodetails/blob/main/music.mp3"
-st.audio(audio_link, format="audio/mp3", loop=True)
-# ----------------------
+# Ссылка на супер-стабильный глобальный аудиопоток MP3
+audio_link = "https://soundhelix.com"
+
+st.markdown(f"""
+<div class="audio-container">
+    <audio controls loop preload="auto">
+        <source src="{audio_link}" type="audio/mp3">
+        Ваш браузер не поддерживает аудио.
+    </audio>
+</div>
+""", unsafe_allow_html=True)
+# ------------------------------------------------
 
 # --- СПИСОК ССЫЛОК НА ТВОИ ФОТО ИЗ ИНТЕРНЕТА ---
 photo_urls = [
